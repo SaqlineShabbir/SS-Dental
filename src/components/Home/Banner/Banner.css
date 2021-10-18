@@ -1,7 +1,7 @@
 .banner{
     display: flex;
     background-repeat: no-repeat;
-    height:85vh;
+    height:90vh;
     
 }
 .banner img{
@@ -17,7 +17,7 @@
 }
 .banner-button{
     border: none;
-    background-color: rgb(28, 0, 128);
+    background-color: #ff6e6c;
     color: white;
     padding-block:10px;
     padding-inline: 25px;

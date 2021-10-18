@@ -1,19 +1,35 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
+import './Header.css'
 const Header = () => {
+  const {user,logOut} = useAuth()
     return (
         <div className="container-fluid">
-<Navbar bg="" expand="lg">
+<Navbar  bg="" expand="lg">
   <Container>
-    <Navbar.Brand className="fw-bold" href="#home">Dental Care</Navbar.Brand>
+    <Navbar.Brand className="fw-bold " href="#home">SS<span className="my-color"> Dental</span></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto mx-auto">
-        <Nav.Link className="fw-bold" href="#home">Home</Nav.Link>
-        <Nav.Link className="fw-bold" href="#home">About</Nav.Link>
-        <Nav.Link className="fw-bold" href="#home">Services</Nav.Link>
-        <Nav.Link className="fw-bold" href="#home">Home</Nav.Link>
+      <Nav className="me-auto mx-auto ">
+        <Nav.Link as={Link} to="/home#home" className="fw-bold  " >Home</Nav.Link>
+        <Nav.Link as={Link} to="/home#home" activeStyle={{ color:" #ff6e6c" }} className="fw-bold mx-5" >About</Nav.Link>
+        <Nav.Link as={Link} to="/home#services" className="fw-bold" >Services</Nav.Link>
+        <Nav.Link as={Link} to="/login" className="fw-bold mx-5" >LogIn</Nav.Link>
+        { 
+          user.email?
+          <Link to="/signup">   <button onClick={logOut} className="signup-button ">Log Out</button></Link>
+          :
+        <Link to="/signup">   <button className="signup-button ">Sign Up</button></Link>
+       }
+       { user.email &&
+           <div className="d-flex">
+           <img className="user-img" src={user?.photoURL} alt="" />
+           <p className="mt-1 ms-2">{user?.displayName}</p>
+           </div>
+       }
+      
       </Nav>
     </Navbar.Collapse>
   </Container>

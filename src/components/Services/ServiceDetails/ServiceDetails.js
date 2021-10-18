@@ -19,7 +19,7 @@ const ServiceDetails = () => {
            </div>
           <div className="service-details-text">
           <h4>Service Name : {exactItem[0]?.name}</h4>
-           <p>Name : {exactItem[0]?.pera}</p>
+           <p> {exactItem[0]?.pera}</p>
           </div>
        </div>
         </div>

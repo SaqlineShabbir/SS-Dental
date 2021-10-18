@@ -2,12 +2,13 @@ import React from 'react';
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className="footer">
-            <div>
+        <div className="footer-content">
+          <div className="footer">
+            <div >
                 <h4>Dental Care</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores soluta reiciendis iste sapiente, commodi assumenda possimus mollitia repellendus cumque? Voluptatum?</p>
             </div>
-            <div>
+            <div >
                 <h6>Contact Us</h6>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -36,6 +37,8 @@ const Footer = () => {
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
+        </div>
+        
     );
 };
 
