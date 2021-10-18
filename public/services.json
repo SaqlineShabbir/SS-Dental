@@ -1,0 +1,116 @@
+[
+    {
+        "id":"1",
+        "name":" Dental Feelings ",
+        "price" : "100",
+        "time":"6",
+        "img":"https://i.ibb.co/PgwFLxV/3d-render-of-jaw-with-teeth-and-three-types-of-inlay-over-white.jpg",
+        "pera":"Dental restoration, dental fillings, or simply fillings, are treatments used to restore the function, integrity, and morphology of missing tooth structure resulting from caries or external trauma as well as to the replacement of such structure supported by dental"
+        
+    },
+    {
+        "id":"2",
+        "name":"Cosmetic Whiting",
+        "price" : "192",
+        "time" :"5",
+        "img":"https://i.ibb.co/3zTv5gQ/cosmetic-whiting.jpg",
+        "pera":"As you eat and drink, leftover residue and bacteria create a film that covers your enamel. Brushing and flossing regularly can help remove this surface-level film. However, your enamel is porous. Over time, staining agents work their way down into your teeth, where you can’t simply scour them away. The result is an unattractive stain that over."
+
+
+    },
+    {
+        "id":"3",
+        "name":"Root Canal",
+        "price" : "185",
+         "time":"6",
+        "img":"https://i.ibb.co/BNrCqQq/root-cannel.jpg",
+        "pera":"Root canal treatment is a treatment sequence for the infected pulp of a tooth which is intended to result in the elimination of infection and the protection of the decontaminated tooth from future microbial invasion"
+
+
+    },
+    {
+        "id":"4",
+        "name":"Dental Implants",
+        "price" : "132",
+        "time":"5",
+        "img":"https://i.ibb.co/8Px93Kn/dental-implant.jpg",
+        "pera":"A dental implant is a surgical component that interfaces with the bone of the jaw or skull to support a dental prosthesis such as a crown, bridge, denture, or facial prosthesis or to act as an orthodontic anchor."
+  
+
+    },
+    {
+        "id":"5",
+        "name":"Vitamins",
+        "price" : "130",
+        "time" :"6",
+        "img":"https://i.ibb.co/7N0GHNz/vitamins.jpg",
+        "pera":"Your mouth, teeth, and gums are the first contact points for the nutrients you consume and are essential for kicking off the digestion process. In fact, according to the International Journal of Environmental Research and Public Health, the process of chewing allows you to extract the greatest possible amount of nutrients from the food you eat."
+
+
+    },
+    {
+        "id":"6",
+        "name":"Braces",
+        "price" : "116",
+        "time":"3",
+        "img":"https://i.ibb.co/L6mz48f/braces.jpg",
+        "pera":"Braces are dental tools that help correct problems with your teeth, like crowding, crooked teeth, or teeth that are out of alignment. Many people get braces when they’re teenagers, but adults get them too. As you wear them, braces slowly straighten and align your teeth so you have a normal bite. Some people get braces to adjust their smile"
+
+
+    },
+    {
+        "id":"7",
+        "name":"Oral Hygiene",
+        "price" : "116",
+        "time":"6",
+        "img":"https://i.ibb.co/b7kDfwB/oral-hygine.jpg",
+        "pera":"Oral hygiene is the practice of keeping one's mouth clean and free of disease and other problems by regular brushing of the teeth and cleaning between the teeth. It is important that oral hygiene be carried out on a regular basis to enable prevention of dental disease and bad breath"
+
+
+    },
+    {
+        "id":"8",
+        "name":"Gingivitis",
+        "price" : "112",
+        "time":"4",
+        "img":"https://i.ibb.co/K7V0Yz5/gingivities.jpg",
+        "pera":"Gingivitis is a mild, early form of gum disease that occurs when bacteria and plaque build up in the mouth and lead to infection. While gingivitis doesn’t always cause symptoms, it can make the gums red, swollen and tender. Regular checkups with a dentist and good oral hygiene at home can clear up gingivitis and prevent worse gum disease."
+
+
+    },
+    {
+        "id":"9",
+        "name":"Periodontology",
+        "price" : "104",
+        "time" :"7",
+        "img":"https://i.ibb.co/1JTBNXf/priodontology.png",
+        "pera":"Periodontology or periodontics is the specialty of dentistry that studies supporting structures of teeth, as well as diseases and conditions that affect them. The supporting tissues are known as the periodontium, which includes the gingiva, alveolar bone, cementum, and the periodontal ligament"
+
+
+    },
+    {
+        "id":"10",
+        "name":"Dental Surgery ",
+        "price" : "104",
+        "time" :"7",
+        "img":"https://i.ibb.co/kgdXhvm/dental-sergery.jpg",
+        "pera":"Dental surgery is any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth, gums and jaw bones."
+
+
+    },
+    {
+        "id":"11",
+        "name":"Dental-x-rey ",
+        "price" : "104",
+        "time" :"7",
+        "img":"https://i.ibb.co/n198StG/x-rey.jpg",
+        "pera":"Dental surgery is any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth, gums and jaw bones."
+
+
+    }
+  
+
+
+    
+  
+]
