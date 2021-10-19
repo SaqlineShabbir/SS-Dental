@@ -24,7 +24,7 @@ what in this website:
 
 ## Firebase Deployed link
         
-
+https://ss-dental.web.app
 
 
 
