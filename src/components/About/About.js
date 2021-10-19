@@ -10,7 +10,7 @@ const About = () => {
            <div className="about-first">
            <div className="mt-5">
         <h3>All You Need To Know About Us </h3>
-        <p>Everything you need to know about us just click thous buttons .</p>
+        
         </div>
            </div>
         <div className="about">
@@ -50,20 +50,20 @@ const About = () => {
               
                <img src={img1} alt="" />
                <h5 className="p-2">Name : Dr. Jenny Smith </h5>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste fugiat molestias temporibus dolorum porro laborum in at itaque consequuntur!</p>
+               <p> Dr.jenny is root cannel specialist.she is very talented and experienced doctor . she is working with us from the beginning of our dental. Everything you know about her just visit her facebook</p>
             </div>
 
             <div className="single-doctor shadow-lg">
             
                <img src={img2} alt="" />
-               <h5 className="p-2">Name : Dr. Luke </h5>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste fugiat molestias temporibus dolorum porro laborum in at itaque consequuntur!</p>
+               <h5 className="p-2">Name : Dr.Luke </h5>
+               <p>Dr.Luke is filling specialist .He is very talented and experienced doctor . she is working with us from the beginning of our dental.Everything you know about him just visit his facebook</p>
             </div>
             <div className="single-doctor shadow-lg">
             
                <img src={img3} alt="" />
                <h5 className="p-2">Name : Dr. Haniya iqbal </h5>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste fugiat molestias temporibus dolorum porro laborum in at itaque consequuntur!</p>
+               <p>Dr.Haniya iqbal Dental Implants specialist.she is very talented and experienced doctor . she is working with us from the beginning of our dental.Everything you know about her just visit her facebook</p>
             </div>
          </div>
 
