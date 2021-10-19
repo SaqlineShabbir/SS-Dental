@@ -2,16 +2,19 @@ import React from 'react';
 import { Link, useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import img from '../../../Images/login2.jpg'
+import './Login.css'
 const Login = () => {
-    const {signInUsingGoogle} = useAuth()
+    const {signInUsingGoogle ,setIsLoading, handleLogIn,handleEmailChange, handlePasswordChange} = useAuth()
     const location = useLocation()
     const redirect_uri = location.state?.from || '/home'
    const history = useHistory()
     const handleGoogleLogIn = () =>{
+        setIsLoading(true)
         signInUsingGoogle()
         .then(result =>{
             history.push(redirect_uri);
-        } )
+        })
+        .finally(()=>setIsLoading(false))
     }
     return (
         <div className="register">
@@ -21,12 +24,12 @@ const Login = () => {
             <div className="login">
         <div className="  p-4 my-5 py-5 ">
         <h3 className="mb-4 fw-bold">Log In</h3>
-            <form onSubmit="">
+            <form onSubmit={handleLogIn}>
  <label for="exampleInputEmail1" class="form-label">Email address</label>
-<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/><br/>
+<input type="email" onBlur={handleEmailChange} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/><br/>
 
 <label for="exampleInputPassword1" class="form-label">Password</label>
-<input type="password" class="form-control" id="exampleInputPassword1"/>
+<input type="password" onBlur={handlePasswordChange} class="form-control" id="exampleInputPassword1"/>
 <br/>
                 <input className="register-button mt-2 w-100" type="submit" value="Log In" />
             </form>

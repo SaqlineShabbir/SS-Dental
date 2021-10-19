@@ -20,6 +20,7 @@ const ServiceDetails = () => {
           <div className="service-details-text">
           <h4>Service Name : {exactItem[0]?.name}</h4>
            <p> {exactItem[0]?.pera}</p>
+           <button className="fill">Fill Up Form</button>
           </div>
        </div>
         </div>

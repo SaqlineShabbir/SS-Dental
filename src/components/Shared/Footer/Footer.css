@@ -6,16 +6,27 @@
     color: white;
 }
 
-
+.footer-text{
+  margin-top:40px;
+}
 
 
 @media only screen and (max-width:688px){
     .footer{
         height:100%;
         width:100%;
-        margin-right: 50px;
+        margin-right: 0px;
         padding: 4px;;
+        grid-template-columns: 1fr;
         
     }
+    .footer-text{
+        margin-top:0px;
+        margin-left: 50px;
+      }
+      .footer-p{
+          margin-left: 60px;
+
+      }
     
 }

@@ -14,7 +14,7 @@ const Services = () => {
         <div className="d-flex mx-auto w-75">
         <div  className="services-text">
         <h4>Our <span className="my-color">Services</span></h4>
-        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius delectus quidem fugiat animi inventore, laudantium id aliquid alias cupiditate, suscipit voluptas laborum et? Illum placeat tempora illo doloremque! Quam fugit omnis eius corrupti quas ullam consequuntur laudantium fugiat rem aut iusto eaque exercitationem dolor repellat, error illo laboriosam facere reprehenderit quia. At minus nobis impedit velit. Delectus itaque recusandae perferendis, officiis natus eligendi eveniet enim ab doloribus provident deleniti repudiandae nostrum consectetur assumenda, quibusdam impedit modi exercitationem tempore molestiae iusto aspernatur non odit et minus! Quasi praesentium voluptatibus corporis ab, a maxime aliquam accusantium alias eveniet vero dolorem nobis voluptates.</p>
+        <p className="">SS dental always here to provide you best services in the entire City . so you can always trust us , we have top 11 services to provide you and we have best doctors to solve your problems. we are working from 1 year and every single patient is happy and thank full to us also we are very happy to provide best services .ss dental has one of the fastest syncing databases in the dental market! All data from YAPI syncs in real-time to your practice management software, so you’ll have accurate information in front of you at all times. Our software syncs every few seconds to the PMS </p>
         </div>
         </div>
 
