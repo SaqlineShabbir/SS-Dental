@@ -83,7 +83,7 @@ const handleNameChange = (e) =>{
 
 const setUserName =() =>{
     updateProfile(auth.currentUser, {
-        displayName: name,photoURL: "https://example.com/jane-q-user/profile.jpg"
+        displayName: name,photoURL: "https://cdn2.iconfinder.com/data/icons/font-awesome/1792/user-512.png"
       })
   .then(result =>{ })
   

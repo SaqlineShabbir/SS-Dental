@@ -4,7 +4,7 @@ import useAuth from '../../../hooks/useAuth';
 import img from '../../../Images/login2.jpg'
 import './Login.css'
 const Login = () => {
-    const {signInUsingGoogle ,setIsLoading, handleLogIn,handleEmailChange, handlePasswordChange} = useAuth()
+    const {signInUsingGoogle ,setIsLoading, handleLogIn,handleEmailChange, handlePasswordChange, error} = useAuth()
     const location = useLocation()
     const redirect_uri = location.state?.from || '/home'
    const history = useHistory()
@@ -31,9 +31,10 @@ const Login = () => {
 <label for="exampleInputPassword1" class="form-label">Password</label>
 <input type="password" onBlur={handlePasswordChange} class="form-control" id="exampleInputPassword1"/>
 <br/>
+<p className="text-danger">{error}</p>
                 <input className="register-button mt-2 w-100" type="submit" value="Log In" />
             </form>
-            <p className="my-3">New To Dental Care? <Link to="/signup">Sign Up</Link></p>
+            <p className="my-3">New To SS Dental? <Link to="/signup">Sign Up</Link></p>
          <button onClick={handleGoogleLogIn} className="register-button w-100 "><i class="fab fa-google"></i> Sign In with Google</button>
         </div>
     </div>
