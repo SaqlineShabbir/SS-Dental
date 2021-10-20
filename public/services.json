@@ -1,7 +1,7 @@
 [
     {
         "id":"1",
-        "name":" Dental Feelings ",
+        "name":" Dental Filling ",
         "price" : "100",
         "time":"6",
         "img":"https://i.ibb.co/PgwFLxV/3d-render-of-jaw-with-teeth-and-three-types-of-inlay-over-white.jpg",
@@ -104,7 +104,7 @@
         "price" : "104",
         "time" :"7",
         "img":"https://i.ibb.co/n198StG/x-rey.jpg",
-        "pera":"Dental surgery is any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth, gums and jaw bones."
+        "pera":"Dental radiographs are commonly called X-rays. Dentists use radiographs for many reasons: to find hidden dental structures, malignant or benign masses, bone loss, and cavities."
 
 
     }

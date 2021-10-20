@@ -4,7 +4,7 @@ import useAuth from '../../../hooks/useAuth';
 import img from '../../../Images/login2.jpg'
 import './Login.css'
 const Login = () => {
-    const {signInUsingGoogle ,setIsLoading, handleLogIn,handleEmailChange, handlePasswordChange, error} = useAuth()
+    const {signInUsingGoogle ,setIsLoading, handleLogIn,handleEmailChange, handlePasswordChange, error,setError,setUser} = useAuth()
     const location = useLocation()
     const redirect_uri = location.state?.from || '/home'
    const history = useHistory()
@@ -16,6 +16,22 @@ const Login = () => {
         })
         .finally(()=>setIsLoading(false))
     }
+    const handleRedirectLogin = (e) =>{
+        e.preventDefault()
+        handleLogIn()
+        .then(result =>{
+            
+            setUser(result.user)
+            history.push(redirect_uri)
+
+            setError('')
+
+            
+         })
+         .catch(error =>{
+            setError(error.message)
+        })
+    }
     return (
         <div className="register">
         <div>
@@ -24,7 +40,7 @@ const Login = () => {
             <div className="login">
         <div className="  p-4 my-5 py-5 ">
         <h3 className="mb-4 fw-bold">Log In</h3>
-            <form onSubmit={handleLogIn}>
+            <form onSubmit={handleRedirectLogin}>
  <label for="exampleInputEmail1" class="form-label">Email address</label>
 <input type="email" onBlur={handleEmailChange} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/><br/>
 

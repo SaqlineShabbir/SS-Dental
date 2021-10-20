@@ -41,6 +41,7 @@ const handleRegister =(e)=>{
      createUserWithEmailAndPassword(auth, email, password)
      .then(result =>{
         setUserName();
+        reloadPage()
          setError('')
          
      })
@@ -48,27 +49,24 @@ const handleRegister =(e)=>{
      .catch(error =>{
          setError(error.message)
      })
+      
     
+ }
+ const reloadPage = () => {
+    window.location.reload();
  }
 
 
  const handleLogIn = (e) => {
-    e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
-    .then(result =>{
-        setUser(result.user)
-        console.log(result.user)
-        setError('')
+   return( 
+    signInWithEmailAndPassword(auth, email, password))
+    
         
 
-    })
+ }
 
     
-    .catch(error =>{
-        setError(error.message)
-    })
-    
- }
+   
 
 
 const handleEmailChange = (e) => {
@@ -110,7 +108,7 @@ const setUserName =() =>{
       error,
       handleNameChange,
       setIsLoading,
-      isLoading
+      isLoading,setError,setUser
 
   }
 }

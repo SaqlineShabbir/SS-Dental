@@ -31,3 +31,26 @@
     color:white;
     background-color:#ff6e6c;
 }
+@media only screen and (max-width:688px){
+    .service-details-childs{
+        display:flex;
+        flex-direction: column;
+    }
+    .service-details p{
+        width:100%;
+        
+    }
+    .service-details-childs img{
+        border-radius:50px;
+        height:400px;
+        width:100%;
+        margin-right: 0px;
+    
+    }
+    .service-details{
+
+       
+        margin-top: 100px;
+        height:100vh;
+    }
+}
