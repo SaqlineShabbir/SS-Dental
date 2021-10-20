@@ -34,7 +34,7 @@ const logOut = () =>{
 const handleRegister =(e)=>{
     e.preventDefault();
     if(password.length <6){
-        setError('Password must be at least 6 carracter long')
+        setError('Password must be at least 6 character long')
         return;
     }
      console.log(email,password)
