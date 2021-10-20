@@ -1,22 +1,42 @@
 import React, { useState } from 'react';
+import { Link, useLocation,useHistory } from 'react-router-dom';
 import './Register.css'
 import img from '../../../Images/login2.jpg'
-import { Link } from 'react-router-dom';
+
 
 import useFirebase from '../../../hooks/useFirebase';
 const Register = () => {
-    const {signInUsingGoogle, handleRegister,handleEmailChange,handlePasswordChange, error, handleNameChange} = useFirebase()
+
+    const location = useLocation()
+    const redirect_uri = location.state?.from || '/home'
+   const history = useHistory()
+
+    const {signInUsingGoogle, handleRegister,handleEmailChange,handlePasswordChange, error, handleNameChange,setError,setUserName} = useFirebase()
 
   
 
-    // const handleRegistration = (e) =>{
-    //      e.preventDefault();
-    //     handleRegister(email,password)
-    // }
+    const handleRegistration = (e) =>{
+         e.preventDefault();
+        handleRegister()
+        .then(result =>{
+            history.push(redirect_uri);
+            setUserName();
+            reloadPage()
+             setError('')
+             
+         })
+         
+         .catch(error =>{
+             setError(error.message)
+         })
+          
+        
+     }
 
-    //  const handleNameChange = (e) =>{
-    //      setName(e.target.value)
-    //  }
+    
+    const reloadPage = () => {
+        window.location.reload();
+     }
 
     return (
         <div className="register">
@@ -26,7 +46,7 @@ const Register = () => {
                 <div className="login">
             <div className="  p-4 my-5 py-5 ">
             <h3 className="mb-4 fw-bold">Creat Account</h3>
-        <form onSubmit={handleRegister}>
+        <form onSubmit={handleRegistration}>
      <label htmlFor="inputName" className="form-label">Your Name</label>
     <input type="text" onBlur={handleNameChange}className="form-control" required aria-describedby=""/><br/>
      <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>

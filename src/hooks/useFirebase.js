@@ -31,30 +31,10 @@ const logOut = () =>{
     
 }
 
-const handleRegister =(e)=>{
-    e.preventDefault();
-    if(password.length <6){
-        setError('Password must be at least 6 character long')
-        return;
-    }
-     console.log(email,password)
-     createUserWithEmailAndPassword(auth, email, password)
-     .then(result =>{
-        setUserName();
-        reloadPage()
-         setError('')
-         
-     })
-     
-     .catch(error =>{
-         setError(error.message)
-     })
-      
-    
- }
- const reloadPage = () => {
-    window.location.reload();
- }
+const handleRegister =()=>{
+    return( createUserWithEmailAndPassword(auth, email, password))
+
+}
 
 
  const handleLogIn = (e) => {
@@ -108,7 +88,7 @@ const setUserName =() =>{
       error,
       handleNameChange,
       setIsLoading,
-      isLoading,setError,setUser
+      isLoading,setError,setUser,setUserName
 
   }
 }
